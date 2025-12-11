@@ -3,10 +3,9 @@ const mongoose = require("mongoose");
 let isConnected = false; // Track the connection state (important for serverless)
 
 async function connectDB() {
-  if (isConnected) {
-    // Reuse the existing database connection
-    return;
-  }
+  console.log("DEBUG: MONGODB_URI =", process.env.MONGODB_URI);   // ADD THIS LINE
+
+  if (isConnected) return;
 
   try {
     const uri =
