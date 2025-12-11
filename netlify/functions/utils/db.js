@@ -10,7 +10,7 @@ async function connectDB() {
   try {
     const uri =
       process.env.MONGODB_URI ||
-      "mongodb+srv://gkfweb25_db_user:GkfWeb25@cluster0.uxvksto.mongodb.net/?appName=Cluster0";
+      "mongodb+srv://gkfweb25_db_user:gkfweb25@cluster0.tyzuxnp.mongodb.net/?appName=Cluster0";
 
     if (!uri) {
       throw new Error("Missing MONGODB_URI environment variable.");
